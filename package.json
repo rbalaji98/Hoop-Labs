@@ -1,0 +1,19 @@
+{
+  "name": "hacktx2k17",
+  "version": "1.0.0",
+  "description": "HackTX Sports Analytics Project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "python-shell": "^0.4.0"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0"
+  }
+}
