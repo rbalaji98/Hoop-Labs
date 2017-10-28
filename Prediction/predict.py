@@ -19,39 +19,29 @@ import numpy as np
 
 
 
-df = pd.read_csv('ncaa_games_2016.csv')
-df2 = pd.read_csv('ncaa_games_2015.csv')
+df = pd.read_csv('ncaa_games_2015.csv')
+df2 = pd.read_csv('ncaa_games_2016.csv')
 
 df['location'] = (df['location'] == 'Home').astype(int)
 df['w/l'] = (df['team_score']>df['opponent_score']).astype(int)
-'''
-df = df.drop('team_name', 1)
-df = df.drop('opponent_name', 1)
-df = df.drop('game_date',1)
-df = df.drop('attendance',1)
-df =  df.drop('game_length',1)
-'''
+
+
 
 df2['location'] = (df2['location'] == 'Home').astype(int)
 df2['w/l'] = (df2['team_score']>df2['opponent_score']).astype(int)
-'''
-df2 = df2.drop('team_name', 1)
-df2 = df2.drop('opponent_name', 1)
-df2 = df2.drop('game_date',1)
-df2 =  df2.drop('attendance',1)
-df2 =  df2.drop('game_length',1)
-'''
 
 
-#df = df.dropna()
-#df2 = df2.dropna()
+df = df.dropna()
+df2 = df2.dropna()
 
-df = df[['team_name','opponent_name','team_score','opponent_score','w/l']]
-df2 = df2[['team_name','opponent_name','team_score','opponent_score','w/l']]
-
+df = df[['team_id','opponent_id','team_score','opponent_score','w/l']]
+df2 = df2[['team_id','opponent_id','team_score','opponent_score','w/l']]
+df = df.dropna()
+df2 = df2.dropna()
 teamlist = set([])
 
 
+'''
 for i in range(len(df['team_name'])):
     teamlist.add(df['team_name'][i])  
 for i in range(len(df2['team_name'])):
@@ -86,20 +76,23 @@ for i in range(len(df2['opponent_name'])):
     
 df['opponent_id'] = oppid
 df2['opponent_id'] = oppid2
-
-
-
-print(len(teamlist))
-
-print(df['team_id'])
-
-print(df2['team_id'])
 '''
-df_X = np.asarray(df)
+
+
+
+
+
+
+#print(df.head())
+#print(df2.head())
+
+df_X = np.asarray(df[['team_id', 'opponent_id']])
 df_Y = np.asarray(df['w/l'])
 
 
-df_XT = np.asarray(df2)
+df_XT = np.asarray(df2[['team_id', 'opponent_id']])
+
+
 df_YT = np.asarray(df2['w/l'])
 
 
@@ -114,7 +107,6 @@ for _ in range(5):
 score_average = np.array(score_array).mean()
 print('Linear Regression Accuracy: ' + str(score_average))
 
-
 har_tree = tree.DecisionTreeClassifier()
 har_tree = har_tree.fit(df_X, df_Y)
 
@@ -128,7 +120,20 @@ har_RF = RandomForestClassifier(n_jobs = 2)
 har_RF = har_RF.fit(df_X , df_Y.ravel())
 
 print('Random Forest Accuracy :' + str(har_RF.score(df_XT, df_YT)))
-'''
+
+
+
+har_KNN = KNeighborsClassifier();
+har_KNN = har_KNN.fit(df_X, df_Y.ravel())
+
+print('Nearest Neighbors Accuracy :' + str(har_KNN.score(df_XT, df_YT)))
+
+har_svm = svm.SVC()
+har_svm = har_svm.fit(df_X,df_Y.ravel())
+
+print('SVM Accuracy :' + str(har_svm.score(df_XT, df_YT)))
+
+
 
 
 
