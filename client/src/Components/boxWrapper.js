@@ -34,31 +34,18 @@ for (var obj2 in new_mapping){
         var team2 = split[1]
         final_obj[team2] = dataset.PROB[new_mapping[obj2]]
         data[split[0]] = final_obj
-
-
-
-
     }
 
-
 }
+
 console.log("final", data)
 
 
 
-// const data = {
-//     Houston:{
-//         Cleveland: .5
-//     },
-//     Cleveland:{
-//         Houston:.5
-//     }
-// }
-
 export default class BoxWrapper extends Component {
     constructor(props) {
         super(props)
-        this.state = {prob: .5, value: '', city1:'Houston', name1:'Rockets', city2:'Cleveland', name2:'Cavaliers', key1:'1', key2:'2'}
+        this.state = {prob: 0.153879257, value: '', city1:'Houston', name1:'Rockets', city2:'Cleveland', name2:'Cavaliers', key1:'1', key2:'2'}
         this.teamChange = this.teamChange.bind(this)
         this.handleClick = this.handleClick.bind(this)
 

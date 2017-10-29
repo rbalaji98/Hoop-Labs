@@ -47,117 +47,117 @@ const source = [
     {
         title: 'DAL',
         description: 'Dallas Mavericks',
-        search: 'Dallas Mavericks'
+        search: 'dallas mavericks'
     },
     {
         title: 'DEN',
         description: 'Denver Nuggets',
-        search: 'Dallas Mavericks'
+        search: 'denver nuggets'
     },
     {
         title: 'DET',
         description: 'Detroit Pistons',
-        search: 'Dallas Mavericks'
+        search: 'detroit pistons'
     },
     {
         title: 'GSW',
         description: 'Golden State Warriors',
-        search: 'Dallas Mavericks'
+        search: 'golden state warriors'
     },
     {
         title: 'IND',
         description: 'Indiana Pacers',
-        search: 'Dallas Mavericks'
+        search: 'indiana pacers'
     },
     {
         title: 'LAC',
         description: 'Los Angeles Clippers',
-        search: 'Dallas Mavericks'
+        search: 'los angeles clippers'
     },
     {
         title: 'LAL',
         description: 'Los Angeles Lakers',
-        search: 'Dallas Mavericks'
+        search: 'los angeles lakers'
     },
     {
         title: 'MEM',
         description: 'Memphis Grizzlies',
-        search: 'Dallas Mavericks'
+        search: 'memphis grizzlies'
     },
     {
         title: 'MIA',
         description: 'Miami Heat',
-        search: 'Dallas Mavericks'
+        search: 'miami heat'
     },
     {
         title: 'MIL',
         description: 'Milwaukee Bucks',
-        search: 'Dallas Mavericks'
+        search: 'milwaukee buks'
     },
     {
         title: 'MIN',
         description: 'Minnesota Timberwolves',
-        search: 'Dallas Mavericks'
+        search: 'minnesota timberwolves'
     },
     {
         title: 'NOP',
         description: 'New Orleans Pelicans',
-        search: 'Dallas Mavericks'
+        search: 'new orleans pelicans'
     },
     {
         title: 'NYK',
         description: 'New York Knicks',
-        search: 'Dallas Mavericks'
+        search: 'new york knicks'
     },
     {
         title: 'OKC',
         description: 'Oklahoma City Thunder',
-        search: 'Dallas Mavericks'
+        search: 'oklahoma city thunder'
     },
     {
         title: 'ORL',
         description: 'Orlando Magic',
-        search: 'Dallas Mavericks'
+        search: 'orlando magic'
     },
     {
         title: 'PHI',
         description: 'Philadelphia 76ers',
-        search: 'Dallas Mavericks'
+        search: 'philadelphia 76ers'
     },
     {
         title: 'PHX',
         description: 'Phoenix Suns',
-        search: 'Dallas Mavericks'
+        search: 'phoenix suns'
     },
     {
         title: 'POR',
         description: 'Portland Trail Blazers',
-        search: 'Dallas Mavericks'
+        search: 'portland trail brazers'
     },
     {
         title: 'SAC',
         description: 'Sacramento Kings',
-        search: 'Dallas Mavericks'
+        search: 'sacramento kings'
     },
     {
         title: 'SAS',
         description: 'San Antonio Spurs',
-        search: 'Dallas Mavericks'
+        search: 'san antonio spurs'
     },
     {
         title: 'TOR',
         description: 'Toronto Raptors',
-        search: 'Dallas Mavericks'
+        search: 'toronto raptors'
     },
     {
         title: 'UTA',
         description: 'Utah Jazz',
-        search: 'Dallas Mavericks'
+        search: 'utah jazz'
     },
     {
         title: 'WAS',
         description: 'Washington Wizards',
-        search: 'Dallas Mavericks'
+        search: 'washington wizards'
     },
 
 
@@ -186,7 +186,7 @@ export default class TeamSearch extends Component {
             if (this.state.value.length < 1) return this.resetComponent()
 
             const re = new RegExp(_.escapeRegExp(this.state.value), 'i')
-            const isMatch = result => re.test(result.description)
+            const isMatch = result => re.test(result.search)
 
             this.setState({
                 isLoading: false,

@@ -23,28 +23,41 @@ const ButtonWrap = withRouter(({ history}) => (
 export default class Home extends Component{
     render(){
         return(
-            <div>
-                <br/>
-                <br/>
-
-
-                <Header size={"huge"} textAlign={"center"}>Machine Learning Basketball Analytics Tool</Header>
+            <div align={'center'}>
+                <div>
                 <br/>
 
-                <Grid>
+
+                    <br/>
+                    <br/>
+                    <img  src={"https://png.icons8.com/?id=12969&size=560"} width={"80px"}/>
+
+
+                <Header  style={{overflow:'hidden', opacity:'.65'}} size={"huge"} textAlign={"center"}>Hoop Labs</Header>
+
+
+
+                    <br/>
+                    <br/>
+                    <Grid >
                     <Grid.Row centered>
                     <ButtonWrap/>
                     </Grid.Row>
                 </Grid>
+
+                </div>
                 <br/>
                 <br/>
+                <br/>
+                <br/>
+                <br/>
 
-            <div style={{postion:'fixed'}}>
+            <div >
 
 
 
 
-                <Particles params = {{
+                <Particles  params = {{
                     "particles": {
                         "number": {
                             "value": 40,
@@ -151,6 +164,16 @@ export default class Home extends Component{
                         }
                     },
                     "retina_detect": true,
+                    "config_demo": {
+                        "hide_card": false,
+                        "background_color": "#b61924",
+                        "background_image": "",
+                        "background_position": "50% 50%",
+                        "background_repeat": "no-repeat",
+                        "background_size": "cover",
+                        "position": 'absolute',
+                        "z_postion":'-1'
+                    }
 
                 }}/>
 
