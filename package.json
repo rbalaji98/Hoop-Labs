@@ -10,9 +10,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "chart.js": "^2.7.1",
     "express": "^4.16.2",
     "nba": "^4.0.1",
-    "python-shell": "^0.4.0"
+    "python-shell": "^0.4.0",
+    "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
     "concurrently": "^3.5.0"
