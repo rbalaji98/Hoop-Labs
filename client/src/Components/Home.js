@@ -7,12 +7,17 @@ import {Grid, Button, Header} from 'semantic-ui-react';
 import { withRouter } from 'react-router-dom'
 
 const ButtonWrap = withRouter(({ history}) => (
+
     <Button
         type='button'
+        primary={true}
+
         onClick={() => { history.push('/Matchup') }}
+
     >
-        Click Me!
+        Start
     </Button>
+       
 ))
 
 export default class Home extends Component{

@@ -9,6 +9,7 @@ import { Fade, Flip, Rotate, Zoom } from 'react-reveal';
 import { Icon } from 'semantic-ui-react'
 
 
+
 const data = {
     labels: ['Points', 'Rebounds', 'Turnovers', '3PM', 'Off. Rtg.', 'Def. Rtg.', 'Avg. Age'],
     datasets: [
