@@ -14,23 +14,31 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import mean_squared_error
 from sklearn.externals.six import StringIO
+from sklearn.model_selection import train_test_split
 from sklearn import svm
 import numpy as np
+from collections import Counter
 
+'''
 
+<<<<<<< HEAD
+df = pd.read_csv('2014.csv')
+df2 = pd.read_csv('2016.csv')
+=======
 
 <<<<<<< HEAD
 df = pd.read_csv('2012.csv')
+>>>>>>> e302a07ec82d03939234f3972aacd63b1b221402
 
 =======
 df = pd.read_csv('data2012.csv')
 
 '''
->>>>>>> 56bbc68ec14f96526c4a5f0ff5202de474d70ca5
+
 df_game = pd.DataFrame()
 
 k = 0
-
+'''
 df['W/L'] = (df['W/L'] == 'W').astype(int)
 df['MATCHUP']
 
@@ -81,48 +89,34 @@ for i in df.index:
                df_game.loc[k,'TOV'] = df.loc[i, 'TOV'] - df.loc[j, 'TOV']
                df_game.loc[k,'PF'] = df.loc[i, 'PF'] - df.loc[j, 'PF']
                
-               k+=1
+
+               k += 1
               
                 
-df_game.to_csv('data2012.csv')
+df_game.to_csv('data2014.csv')
 
+''' 
     
-<<<<<<< HEAD
-'''
-=======
-
->>>>>>> 56bbc68ec14f96526c4a5f0ff5202de474d70ca5
-df2['W/L'] = (df2['W/L'] == 'W').astype(int)
 
 
+df = pd.read_csv('data2012.csv')
 
-df = df.dropna()
-df2 = df2.dropna()
+myList = []
+myDict = dict(Counter(df['MATCHUP']))
+for key in myDict:
+     myList.append(key)
+#print(myList)
+myList = list(set(myList))
+for i in df.index:
+                
+     df.loc[i, 'MATCHUP_ID'] = myList.index(df.loc[i, 'MATCHUP'])
+     
 
-df = df[['team_id','opponent_id','team_score','opponent_score','w/l']]
-df2 = df2[['team_id','opponent_id','team_score','opponent_score','w/l']]
-df = df.dropna()
-df2 = df2.dropna()
-teamlist = set([])
+df = df.drop('Unnamed: 0' , 1)
 
-df_X = np.asarray(df[['team_id', 'opponent_id']])
-df_Y = np.asarray(df['w/l'])
-
-
-df_XT = np.asarray(df2[['team_id', 'opponent_id']])
-
-
-df_YT = np.asarray(df2['w/l'])
-'''
-<<<<<<< HEAD
+df.to_csv('udata2012.csv')
 
 
-
-=======
-df=df[1:]
-
-print(df.head())
->>>>>>> 56bbc68ec14f96526c4a5f0ff5202de474d70ca5
 
 
 
