@@ -19,8 +19,7 @@ import numpy as np
 
 
 
-df = pd.read_csv('2015.csv')
-df2 = pd.read_csv('2016.csv')
+df = pd.read_csv('2012.csv')
 
 df_game = pd.DataFrame()
 
@@ -43,7 +42,7 @@ for i in df.index:
                
                
                df_game.loc[k, 'MATCHUP'] = df.loc[j, 'MATCHUP']
-               df_game.loc[k,'PPTS'] = df.loc[j, 'PPTS'] - df.loc[i, 'PPTS']
+               df_game.loc[k,'PTS'] = df.loc[j, 'PTS'] - df.loc[i, 'PTS']
                df_game.loc[k,'FG%'] = df.loc[j, 'FG%'] - df.loc[i, 'FG%']
                df_game.loc[k,'3P%'] = df.loc[j, '3P%'] - df.loc[i, '3P%']
                df_game.loc[k,'FT%'] = df.loc[j, 'FT%'] - df.loc[i, 'FT%']
@@ -61,7 +60,7 @@ for i in df.index:
                k += 1
                
                df_game.loc[k, 'MATCHUP'] = df.loc[i, 'MATCHUP']
-               df_game.loc[k,'PPTS'] = df.loc[i, 'PPTS'] - df.loc[j, 'PPTS']
+               df_game.loc[k,'PTS'] = df.loc[i, 'PTS'] - df.loc[j, 'PTS']
                df_game.loc[k,'FG%'] = df.loc[i, 'FG%'] - df.loc[j, 'FG%']
                df_game.loc[k,'3P%'] = df.loc[i, '3P%'] - df.loc[j, '3P%']
                df_game.loc[k,'FT%'] = df.loc[i, 'FT%'] - df.loc[j, 'FT%']
@@ -76,13 +75,13 @@ for i in df.index:
                df_game.loc[k,'TOV'] = df.loc[i, 'TOV'] - df.loc[j, 'TOV']
                df_game.loc[k,'PF'] = df.loc[i, 'PF'] - df.loc[j, 'PF']
                
-               
+               k+=1
               
                 
-df_game.to_csv('data2015.csv')
+df_game.to_csv('data2012.csv')
 
     
-
+'''
 df2['W/L'] = (df2['W/L'] == 'W').astype(int)
 
 
