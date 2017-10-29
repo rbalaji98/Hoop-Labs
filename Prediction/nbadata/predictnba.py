@@ -95,12 +95,11 @@ for i in df.index:
                 
 df_game.to_csv('data2014.csv')
 
-         
+''' 
     
-<<<<<<< HEAD
-''''
 
-df = pd.read_csv('data2015.csv')
+
+df = pd.read_csv('data2012.csv')
 
 myList = []
 myDict = dict(Counter(df['MATCHUP']))
@@ -110,11 +109,12 @@ for key in myDict:
 myList = list(set(myList))
 for i in df.index:
                 
-     df.loc[i, 'MATCHUP'] = myList.index(df.loc[i, 'MATCHUP'])
+     df.loc[i, 'MATCHUP_ID'] = myList.index(df.loc[i, 'MATCHUP'])
      
 
+df = df.drop('Unnamed: 0' , 1)
 
-
+df.to_csv('udata2012.csv')
 
 
 
