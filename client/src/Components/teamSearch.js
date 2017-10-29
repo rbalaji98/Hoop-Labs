@@ -37,7 +37,7 @@ export default class TeamSearch extends Component {
     handleResultSelect = (e, { result }) => {
         console.log(result)
 
-        this.props.teamChange(result)
+        this.props.teamChange(result, this.props.num)
 
     }
 
