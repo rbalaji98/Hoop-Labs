@@ -2,20 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="295b57e3-76ab-453e-9aae-c6f5ffc98089" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Prediction/nbadata/predictnba.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Prediction/nbadata/2012.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Prediction/nbadata/2013.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Prediction/nbadata/2014.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Prediction/nbadata/2015.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Prediction/nbadata/2016.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Prediction/nbadata/data2012.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Prediction/nbadata/data2013.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Prediction/nbadata/data2014.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Prediction/nbadata/data2015.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Prediction/nbadata/data2016.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/forDanny/data2012.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/forDanny/data2013.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/forDanny/data2014.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/forDanny/data2015.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/forDanny/data2016.csv" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Prediction/nbadata/2012.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Prediction/nbadata/2013.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Prediction/nbadata/2014.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Prediction/nbadata/2015.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Prediction/nbadata/2016.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Prediction/nbadata/predictnba.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Prediction/ncaa_games_2014.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Prediction/ncaa_games_2015.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Prediction/ncaa_games_2016.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Prediction/predict.py" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Prediction/nbadata/data2012.csv" afterPath="$PROJECT_DIR$/forDanny/data2012.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Prediction/nbadata/data2013.csv" afterPath="$PROJECT_DIR$/forDanny/data2013.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Prediction/nbadata/data2014.csv" afterPath="$PROJECT_DIR$/forDanny/data2014.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Prediction/nbadata/data2015.csv" afterPath="$PROJECT_DIR$/forDanny/data2015.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Prediction/nbadata/data2016.csv" afterPath="$PROJECT_DIR$/forDanny/data2016.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,7 +52,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="doughnut.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="doughnut.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/Components/doughnut.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
@@ -53,6 +60,18 @@
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#49#90#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Matchup.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/src/Matchup.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+              <folding>
+                <element signature="e#47#88#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -236,72 +255,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HackTx-2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HackTx-2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HackTx-2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HackTx-2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HackTx-2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HackTx-2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -410,12 +363,12 @@
       <updated>1509212419502</updated>
       <workItem from="1509213827846" duration="24000" />
       <workItem from="1509213925035" duration="297000" />
-      <workItem from="1509214340268" duration="16108000" />
+      <workItem from="1509214340268" duration="16181000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16429000" />
+    <option name="totallyTimeSpent" value="16502000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="24" y="23" width="1416" height="825" extended-state="0" />
@@ -699,16 +652,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/Matchup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
-          <folding>
-            <element signature="e#47#88#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="411">
@@ -792,6 +735,16 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#49#90#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/Matchup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+          <folding>
+            <element signature="e#47#88#0" expanded="true" />
           </folding>
         </state>
       </provider>
