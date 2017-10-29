@@ -19,8 +19,9 @@ import numpy as np
 
 
 
-df = pd.read_csv('2012.csv')
+df = pd.read_csv('data2012.csv')
 
+'''
 df_game = pd.DataFrame()
 
 k = 0
@@ -81,7 +82,7 @@ for i in df.index:
 df_game.to_csv('data2012.csv')
 
     
-'''
+
 df2['W/L'] = (df2['W/L'] == 'W').astype(int)
 
 
@@ -104,9 +105,9 @@ df_XT = np.asarray(df2[['team_id', 'opponent_id']])
 
 df_YT = np.asarray(df2['w/l'])
 '''
+df=df[1:]
 
-
-
+print(df.head())
 
 
 
