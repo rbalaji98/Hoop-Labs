@@ -13,4 +13,3 @@ npm start
 ```
 The frontend should appear in your browser if you go to http://localhost/3000.
 
-Hello my name is Eliott Lee. 
