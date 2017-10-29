@@ -17,7 +17,7 @@ const ButtonWrap = withRouter(({ history}) => (
     >
         Start
     </Button>
-       
+
 ))
 
 export default class Home extends Component{
