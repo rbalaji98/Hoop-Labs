@@ -21,7 +21,7 @@ const data = {
 export default class BoxWrapper extends Component {
     constructor(props) {
         super(props)
-        this.state = {prob: .3, value: '', city1:'Cleveland', name1:'Cavaliers', city2:'Houston', name2:'Rockets', key1:'1', key2:'2'}
+        this.state = {prob: .5, value: '', city1:'Houston', name1:'Rockets', city2:'Cleveland', name2:'Cavaliers', key1:'1', key2:'2'}
         this.teamChange = this.teamChange.bind(this)
         this.handleClick = this.handleClick.bind(this)
 
@@ -65,7 +65,7 @@ export default class BoxWrapper extends Component {
                         <Button primary={true} onClick={this.handleClick}>Calculate</Button>
                     </Grid.Row>
 
-                <DoughnutChart prob={this.state.prob} />
+                <DoughnutChart prob={this.state.prob} team1 = {this.state.name1} team2={this.state.name2} />
             </Grid>
         )
     }

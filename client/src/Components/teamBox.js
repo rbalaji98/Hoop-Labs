@@ -42,10 +42,7 @@ export default class TeamBox extends Component {
                         </Card.Description>
                     </Card.Content>
                     <Card.Content extra>
-                        <a>
-                            <Icon name='user'/>
-                            22 Friends
-                        </a>
+
                     </Card.Content>
                 </Card>
                 <TeamSearch value = {this.value} teamChange = {this.teamChange} num={this.props.num} />

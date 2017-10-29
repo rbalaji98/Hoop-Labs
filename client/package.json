@@ -11,6 +11,9 @@
     "react-chartjs": "^0.8.0",
     "react-chartjs-2": "^2.6.4",
     "react-dom": "^16.0.0",
+    "react-particles": "0.0.3",
+    "react-particles-js": "^2.1.0",
+    "react-reveal": "^0.7.2",
     "react-router": "^4.2.0",
     "react-scripts": "1.0.14",
     "semantic-ui-react": "^0.75.1"

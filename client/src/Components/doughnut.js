@@ -20,8 +20,8 @@ export default class DoughnutChart extends Component{
 
             // These labels appear in the legend and in the tooltips when hovering different arcs
             labels: [
-            'Team1',
-            'Team2'
+            this.props.team1,
+            this.props.team2
             ],
 
         }}
