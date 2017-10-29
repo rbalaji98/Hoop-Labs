@@ -99,7 +99,7 @@ df_game.to_csv('data2014.csv')
     
 
 
-df = pd.read_csv('data2012.csv')
+df = pd.read_csv('s16.csv')
 
 myList = []
 myDict = dict(Counter(df['MATCHUP']))
@@ -110,11 +110,16 @@ myList = list(set(myList))
 for i in df.index:
                 
      df.loc[i, 'MATCHUP_ID'] = myList.index(df.loc[i, 'MATCHUP'])
-     
+     if(df.loc[i, 'PTS'] > 0):
+             df.loc[i, 'w/l'] = 1
+     else:
+         df.loc[i, 'w/l'] = 0
 
 df = df.drop('Unnamed: 0' , 1)
 
-df.to_csv('udata2012.csv')
+
+
+df.to_csv('us16.csv')
 
 
 
