@@ -1,15 +1,5 @@
-# HackTx-2017
+# Hoop Labs
 
-Repo for hacktx
+Hoop Labs is a basketball data visualization suite which includes head-to-head basketball match prediction. Prediction algorhithm was trained on season data from 2012-2015 and accuracy was verified on 2016-2017 NBA season. Built using react and python. Predicts accurately 65% of the time.
 
-## Starting the Webpack Server / Node Server
-In the root directory of the project run:
-```
-npm start
-```
-Then, cd into the client folder and run:
-```
-npm start
-```
-The frontend should appear in your browser if you go to http://localhost/3000.
-
+Check us out at: HoopLabs.surge.sh
